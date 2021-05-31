@@ -41,7 +41,7 @@ jobs:
       #   reportFormat: xml,html,custom
       #   additionalParams: '-property report.custom.extension=sarif -property report.custom.xsl.file=${PARASOFT_SARIF_XSL}'
      #  commandLinePattern: 'cpptestcli -data "W:\WorkArea\C++test\GitHub" -config "C:\Users\nareshs\Desktop\MISRA C 2012.properties" -report "W:\WorkArea\C++test\GitHub\report" -bdf "W:\WorkArea\C++test\Demo-Workspace\Demo-Project\Sensor_AM\cpptestscan.bdf" -localsettings "C:\Users\nareshs\Desktop\MISRA C 2012.properties\localsettings.properties"'
-        commandLinePattern: '${cpptestcli} -data ../workspace -config "${testConfig}" -report "${reportDir}" -bdf "${input}" ${additionalParams}'
+     #   commandLinePattern: '${cpptestcli} -data ../workspace -config "${testConfig}" -report "${reportDir}" -bdf "${input}" ${additionalParams}'
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)
       uses: github/codeql-action/upload-sarif@v1
