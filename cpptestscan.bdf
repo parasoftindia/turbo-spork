@@ -1,0 +1,9 @@
+------- cpptestscan v.10.4.4.20200410B2534 -------
+working_dir=W:\WorkArea\C++test\Demo-Workspace\Demo-Stable-Projects\Sensor_AM
+project_name=Sensor_AM
+arg=gcc
+arg=-g
+arg=-I.
+arg=-o
+arg=sensor.exe
+arg=sensor.c
