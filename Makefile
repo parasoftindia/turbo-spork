@@ -1,5 +1,5 @@
-CC=cpptestcc -compiler gcc_7-64 -line-coverage -- gcc
-#CC=cpptestscan gcc
+#CC=cpptestcc -compiler gcc_7-64 -line-coverage -- gcc
+CC= gcc
 
 FLAGS=-g -I.
 
@@ -12,7 +12,7 @@ EXEC=sensor.exe
 all : $(EXEC)
 
 $(EXEC) : $(SRCS)
-	$(CC) $(FLAGS) C:\Softwares\x64\Parasoft\C++test\10.4\engine\coverage\runtime\build\cpptest.o -o $@ $(SRCS)
+	$(CC) $(FLAGS) -o $@ $(SRCS)
 	#$(CC) $(FLAGS) -o $@ $(SRCS)
 
 clean:
