@@ -40,7 +40,7 @@ jobs:
       with:
       #   reportFormat: xml,html,custom
       #   additionalParams: '-property report.custom.extension=sarif -property report.custom.xsl.file=${PARASOFT_SARIF_XSL}'
-        additionalParams: '-localsettings C:\Users\nareshs\Desktop\localsettings.properties'
+      #  additionalParams: '-localsettings C:\Users\nareshs\Desktop\localsettings.properties'
         commandLinePattern: '${cpptestcli} -data ../workspace -config "${testConfig}" -report "W:\WorkArea\C++test\GitHub\reports" -bdf "${input}" ${additionalParams}'
 
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
